@@ -1,0 +1,47 @@
+<div class="bm bw0 mdcp">
+
+    <script type="text/javascript">
+        var allowbbcode = allowimgcode = 1;
+        var allowhtml = forumallowhtml = allowsmilies = 0;
+    </script>
+    <div class="exfm">
+        <script type="text/javascript" src="{$_G[setting][jspath]}bbcode.js?{VERHASH}"></script>
+        <form method="post" autocomplete="off">
+            <input type="hidden" name="formhash" value="{FORMHASH}">
+            <input type="hidden" name="fid" value="$_G[fid]">
+            <table cellspacing="0" cellpadding="0">
+                <caption>
+                    <h4>{lang liudon_forum_summary:forum_summary}</h4>
+                    <div id="rulespreview"></div>
+                </caption>
+                <tr>
+                    <td class="ptm">
+                        <div class="tedt">
+                            <div class="bar">
+                                <div class="y"><a href="javascript:;" onclick="$('rulespreview').innerHTML = bbcode2html($('rulesmessage').value)">{lang liudon_forum_summary:memcp_profile_preview}</a></div>
+                                <!--{eval $seditor = array('rules', array('bold', 'color', 'img', 'link'));}-->
+                                <!--{subtemplate common/seditor}-->
+                            </div>
+                            <div class="area">
+                                <textarea id="rulesmessage" name="rulesnew" class="pt" rows="8">$_G['forum']['summary']</textarea>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="15%" valign="top" class="ptm">
+                        <p>{lang liudon_forum_summary:discuzcode} {lang liudon_forum_summary:enabled}</p>
+                        <p>{lang liudon_forum_summary:post_imgcode} {lang liudon_forum_summary:enabled}</p>
+                        <p>{lang liudon_forum_summary:post_html} {lang liudon_forum_summary:disabled}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" name="editsubmit" class="pn" value="true"><strong>{lang submit}</strong></button>
+                        <!--{if $update}-->
+                            {lang liudon_forum_summary:mod_message_forum_update}
+                        <!--{/if}-->
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

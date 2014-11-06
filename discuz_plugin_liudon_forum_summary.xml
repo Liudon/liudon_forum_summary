@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2014-10-30 21:04]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/32_gbk/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[°æ¿é¼ò½é]]></item>
+			<item id="identifier"><![CDATA[liudon_forum_summary]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[liudon_forum_summary/]]></item>
+			<item id="copyright"><![CDATA[Don]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[summary]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[manage]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[°æ¿é¼ò½é]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[15]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2,X3.1,X3,X2.5,X2]]></item>
+		<item id="var">
+			<item id="0">
+                <item id="displayorder"><![CDATA[0]]></item>
+                <item id="title"><![CDATA[Ðü¸¡ÏÔÊ¾°æÖ÷]]></item>
+                <item id="description"><![CDATA[¿ªÆôºó£¬ÔÚÇ°Ì¨°æ¿éÌæ»»Discuz!Ô­ÓÐ°æÖ÷ÏÔÊ¾ÑùÊ½£¬¸ÄÎªÐü¸¡ÏÔÊ¾°æ¿éµÄ°æÖ÷ÐÅÏ¢¡£]]></item>
+                <item id="variable"><![CDATA[show_forummanager]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="1">
+                <item id="displayorder"><![CDATA[1]]></item>
+                <item id="title"><![CDATA[×ÖÌåÑÕÉ«]]></item>
+                <item id="description"><![CDATA[¿ªÆôÐü¸¡ÏÔÊ¾°æÖ÷ºó£¬ÉèÖÃÇ°Ì¨ÏÔÊ¾°æÖ÷×ÖÌåµÄÑÕÉ«¡£]]></item>
+                <item id="variable"><![CDATA[color]]></item>
+                <item id="type"><![CDATA[color]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="2">
+                <item id="displayorder"><![CDATA[2]]></item>
+                <item id="title"><![CDATA[Ö÷ÌâµØÖ·]]></item>
+                <item id="description"><![CDATA[ÉèÖÃÉêÇë°æÖ÷µÄÖ÷ÌâµÄµØÖ·£¬ÒÔhttp://¿ªÍ·¡£
+Ç°Ì¨°æ¿éÈôÃ»ÓÐ°æÖ÷£¬Ôò»áÏÔÊ¾ÉêÇë°æÖ÷Á´½Ó¡£]]></item>
+                <item id="variable"><![CDATA[apply_url]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+		</item>
+        <item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+        <item id="language">
+            <item id="templatelang">
+                <item id="memcp_profile_preview"><![CDATA[Ô¤ÀÀ]]></item>
+                <item id="text"><![CDATA[ÎÄ×Ö]]></item>
+                <item id="post_html"><![CDATA[HTML ´úÂë]]></item>
+                <item id="post_imgcode"><![CDATA[[img] ´úÂë]]></item>
+                <item id="discuzcode"><![CDATA[±à¼­Æ÷´úÂë]]></item>
+                <item id="enabled"><![CDATA[¿ÉÓÃ]]></item>
+                <item id="disabled"><![CDATA[½ûÓÃ]]></item>
+                <item id="forum_summary"><![CDATA[°æ¿é¼ò½é]]></item>
+                <item id="mod_message_forum_update"><![CDATA[¸üÐÂ³É¹¦£¬Çë¼ÌÐø²Ù×÷]]></item>
+            </item>
+            <item id="scriptlang">
+                <item id="apply_forummanager"><![CDATA[ÉêÇë°æÖ÷]]></item>
+            </item>
+        </item>
+        <item id="license"><![CDATA[
+Ê¹ÓÃËµÃ÷£¨Çë×ÐÏ¸ÔÄ¶Á£©£º
+1. Ðü¸¡Õ¹Ê¾°æ¿éµÄ×Ô¶¨ÒåÐÅÏ¢£¬ÐèÒªÅäºÏ×Ô¶¨Òå°æ¿éÍ¼±êºÍ°æ¿éºáÅÅÊ¹ÓÃ¡£
+    °²×°ºóÇëµ½Ç°Ì¨°æ¿éµÄ<ÂÛÌ³¹ÜÀí>ÏÂÕÒµ½<°æ¿é¼ò½é>Ïî½øÐÐÄÚÈÝÉèÖÃ£¬ÄÚÈÝÖ§³ÖDiscuz! ´úÂë£¬¿ÉÊµÏÖ´ÖÌå£¬ÎÄ×ÖÑÕÉ«£¬Á´½Ó£¬Í¼Æ¬µÈ¡£ÈôÎ´ÉèÖÃ°æ¿é¼ò½é£¬Ç°Ì¨Ôò²»»áÕ¹Ê¾¼ò½éÐÅÏ¢¡£
+    ÄúÐèÒª×Ô¶¨ÒåÒªÕ¹Ê¾µÄ°æ¿éµÄ°æ¿éÍ¼±ê£¬Í¬Ê±ÉèÖÃµ±Ç°°æ¿éËùÔÚ·ÖÇøµÄ°æ¿éºáÅÅ¸öÊý£¬·ñÔòÇ°Ì¨ÎÞ·¨Ðü¸¡ÏÔÊ¾°æ¿é¼ò½é¡£
+    µ±ÄúÉèÖÃÍê³Éºó£¬Ç°Ì¨Êó±êÒÆ¶¯µ½°æ¿éÍ¼±êÉÏÊ±£¬»áÐü¸¡Õ¹Ê¾µ±Ç°°æ¿é×îÐÂ»Ø¸´µÄÖ÷ÌâºÍÄú×Ô¶¨ÒåµÄ°æ¿é¼ò½éÄÚÈÝ¡£
+2. Ðü¸¡Õ¹Ê¾°æ¿éµÄ°æÖ÷ÐÅÏ¢¡£
+    °²×°ºóÇëµ½ºóÌ¨Ó¦ÓÃ±¾²å¼þÏÂ½øÐÐÉèÖÃºó²Å¿ÉÉúÐ§£¬Ö§³Ö×Ô¶¨ÒåÊÇ·ñÏÔÊ¾£¬ÎÄ×ÖÑÕÉ«ÒÔ¼°ÉêÇë°æÖ÷µÄÁ´½Ó¡£
+    Discuz!Ä¬ÈÏÊÇÖ±½ÓÕ¹Ê¾ËùÓÐ°æÖ÷Ãû×Ö£¬ÈôÄú¿ªÆôÐü¸¡ÏÔÊ¾°æÖ÷¹¦ÄÜºó£¬Ç°Ì¨»áÖ»ÏÔÊ¾°æÖ÷Á´½Ó£¬Êó±êÒÆÉÏÈ¥ºóÏÔÊ¾ËùÓÐ°æÖ÷Ãû×Ö¡£
+3. ËùÓÐ¹¦ÄÜÈ«²¿Í¨¹ý²å¼þÊµÏÖ£¬²»ÐèÒªÐÞ¸ÄÄ£°å£¬²»Ôö¼ÓÊý¾Ý¿â²éÑ¯¡£
+
+ÊÚÈ¨ËµÃ÷£º
+1. ±¾²å¼þËùÓÐÈ¨¹é×÷Õß±¾ÈËËùÓÐ¡£
+2. ½ûÖ¹Î´¾­ÊÚÈ¨µÄ¶þ´Î¿ª·¢¡¢ÐÞ¸Ä¡¢×ªÈÃºÍÏúÊÛ¡£Èç¹ûÄúÐèÒª¶¨ÖÆÇëÁªÏµ±¾ÈË£¨ÓÊÏäµØÖ·£ºi@liudon.org£©¡£
+        ]]></item>
+	</item>
+</root>
