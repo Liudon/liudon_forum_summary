@@ -10,7 +10,7 @@ if(!defined('IN_DISCUZ')) {
 
 $sql = <<<EOF
 
-DELETE FROM `pre_common_setting` WHERE skey like 'liudon_forum_summary_%';
+DELETE FROM `pre_common_syscache` WHERE cname like 'liudon_forum_summary_%';
 
 EOF;
 

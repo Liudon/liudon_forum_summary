@@ -16,7 +16,12 @@ class plugin_liudon_forum_summary_forum extends plugin_liudon_forum_summary {
     function index_forum_extra_output() {
         global $_G, $catlist, $forumlist;
 
-        $return = array();
+        $cacheKeys = $return = array();
+        foreach ($forumlist as $fid => $forum) {
+            $cacheKeys[] = 'liudon_forum_summary_' . $fid;
+        }
+        loadcache($cacheKeys);
+
         foreach ($forumlist as $fid => $forum) {
 
             $html = '';
@@ -38,14 +43,14 @@ class plugin_liudon_forum_summary_forum extends plugin_liudon_forum_summary {
 
             $return[$fid] = $html;
 
-            if ($forum['icon'] && $_G['setting']['liudon_forum_summary_' . $fid] && $catlist[$forum['fup']]['forumcolumns']) {
+            if ($forum['icon'] && $_G['cache']['liudon_forum_summary_' . $fid] && $catlist[$forum['fup']]['forumcolumns']) {
                 $ctrlid = 'ctrl_summary_' . $fid;
 
-                $html = '<div id="' . $ctrlid . '_menu" ctrlid="' . $ctrlid . '" class="p_pop" style="display:none;width:250px;height:150px;overflow:hidden;margin-top:80px;">';
+                $html = '<div id="' . $ctrlid . '_menu" ctrlid="' . $ctrlid . '" class="p_pop" style="display:none;width:250px;overflow:hidden;margin-top:80px;">';
                 if (is_array($forum['lastpost'])) {
                     $html .= '<a href="forum.php?mod=redirect&tid=' . $forum['lastpost']['tid'] . '&goto=lastpost#lastpost" class="xi2">' . cutstr($forum['lastpost']['subject'], 30) . '</a>';
                 }
-                $html .= $_G['setting']['liudon_forum_summary_' . $fid];
+                $html .= $_G['cache']['liudon_forum_summary_' . $fid];
                 $html .= '</div>';
                 $forum['icon'] = '<div id="ctrl_summary_' . $fid . '" onmouseover="showMenu({\'ctrlid\':\'' . $ctrlid . '\'});">' . $forum['icon'] . '</div>' . $html;
                 $forumlist[$fid] = $forum;

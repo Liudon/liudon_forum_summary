@@ -35,10 +35,12 @@ if (submitcheck('editsubmit')) {
     if ($_GET['rulesnew']) {
         $value = preg_replace('/on(mousewheel|mouseover|click|load|onload|submit|focus|blur)="[^"]*"/i', '', discuzcode($_GET['rulesnew'], 1, 0, 0, 0, 1, 1, 0, 0, 1));
     }
-    C::t('common_setting')->update_batch(array('liudon_forum_summary_' . $fid => $value));
-    updatecache('setting');
+
+    savecache('liudon_forum_summary_' . $fid, $value);
 }
 
-if ($_G['setting']['liudon_forum_summary_' . $fid]) {
-    $_G['forum']['summary'] = html2bbcode($_G['setting']['liudon_forum_summary_' . $fid]);
+loadcache('liudon_forum_summary_' . $fid);
+
+if ($_G['cache']['liudon_forum_summary_' . $fid]) {
+    $_G['forum']['summary'] = html2bbcode($_G['cache']['liudon_forum_summary_' . $fid]);
 }
